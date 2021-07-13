@@ -6,7 +6,7 @@ VOLUME /data
 RUN addgroup -g 4242 -S qumine \
 && adduser -h /home/qumine/ -G qumine -S -D -u 4242 qumine
 
-COPY templater.sh /home/qumine/templater.sh
+COPY --chmod=700 --chown=qumine:qumine templater.sh /home/qumine/templater.sh
 
 USER qumine
 WORKDIR /home/qumine/
