@@ -10,4 +10,4 @@ COPY --chmod=700 --chown=qumine:qumine templater.sh /home/qumine/templater.sh
 
 USER qumine
 WORKDIR /home/qumine/
-ENTRYPOINT [ "templater.sh"]
+ENTRYPOINT [ "/home/qumine/templater.sh"]
