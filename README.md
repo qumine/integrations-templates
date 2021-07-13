@@ -8,7 +8,7 @@ QuMine - Integrations - Templates
 Extend this image and add your template files to it.
 
 ```Dockerfile
-FROM qumine/integrations-templates:v0.0.1
+FROM qumine/integrations-templates:v0.0.4
 COPY my-template/ /home/qumine/template/
 ```
 # Advanced Usage
@@ -18,10 +18,11 @@ If you want to customize the behaviour further create a file called template.sh 
 ```sh
 #! /bin/sh
 
-random=$(echo $((RANDOM%3)))
+random=$(echo $((RANDOM%2)))
 echo "Using world $random"
-cp -R "worlds/$random/*" "world"
-rm -rf "worlds"
+mkdir "/home/qumine/template/world"
+cp -R "/home/qumine/template/worlds/$random/"* "/home/qumine/template/world"
+rm -rf "/home/qumine/template/worlds"
 ```
 
 For an example see here: 
