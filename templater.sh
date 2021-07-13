@@ -7,4 +7,4 @@ if test -f "$FILE"; then
 fi
 
 echo "Copying template"
-cp -R /home/qumine/template /data
+cp -R /home/qumine/template/* /data
