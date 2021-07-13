@@ -1,7 +1,7 @@
 QuMine - Integrations - Templates
 ---
 
-[QuMine-Server (Java)](https://github.com/qumine/qumine-server-java) Integration to load template like servers before server startup.
+[QuMine-Server (Java)](https://github.com/qumine/qumine-server-java) Integration for server templates.
 
 # Usage
 
