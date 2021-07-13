@@ -8,7 +8,7 @@ QuMine - Integrations - Templates
 Extend this image and add your template files to it.
 
 ```Dockerfile
-FROM qumine/integrations-templates
+FROM qumine/integrations-templates:v0.0.1
 COPY my-template/ /home/qumine/template/
 ```
 # Advanced Usage
